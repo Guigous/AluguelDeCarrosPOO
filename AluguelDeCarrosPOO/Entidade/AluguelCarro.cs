@@ -8,6 +8,7 @@ namespace AluguelDeCarrosPOO
 {
     class AluguelCarro
     {
+        //cosntrutor
         public DateTime Start { get; set; }
         public DateTime Finish { get; set; }
         public Veiculo Veiculo { get; private set; }
@@ -16,11 +17,11 @@ namespace AluguelDeCarrosPOO
         
         
         
-        public AluguelCarro(DateTime start, DateTime finish, Veiculo veiculo)
+        public AluguelCarro(DateTime checkin, DateTime checkout, Veiculo veiculo)
         {
 
-            Start = start;
-            Finish = finish;
+            Checkin = checkin;
+            checkout = checkout;
             Veiculo = veiculo;
             Fatura = null;
 

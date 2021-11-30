@@ -9,21 +9,24 @@ namespace AluguelDeCarrosPOO
 {
     class Fatura
     {
-        public double basicPayment { get; set; }
+        //Construtor
+        public double Pagamento { get; set; }
         public double Taxa { get; set; }
-        public Fatura(double aluguel, double taxa)
+        public Fatura(double pagamento, double taxa)
         {
-            basicPayment = aluguel;
+            Pagamento = pagamento;
             Taxa = taxa;
         }
+       
         public double PagamentoTotal
         {
             get { return basicPayment + Taxa; }
         }
         public override string ToString()
         {
+            //retorno da fatura
             return "Basic payment: "
-            + basicPayment.ToString("F2", CultureInfo.InvariantCulture)
+            + Pagamento.ToString("F2", CultureInfo.InvariantCulture)
             + "\nTaxa: "
             + Taxa.ToString("F2", CultureInfo.InvariantCulture)
             + "\nTotal payment: "

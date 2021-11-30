@@ -7,6 +7,7 @@ namespace AluguelDeCarrosPOO
     {
         static void Main(string[] args)
         {
+            //Input e processamento de dados
             Console.WriteLine("Entre com os dados da locação:");
             Console.Write("modelo: ");
             string model = Console.ReadLine();
@@ -21,6 +22,8 @@ namespace AluguelDeCarrosPOO
             AluguelCarro aluguel = new AluguelCarro(start, finish, new Veiculo(model));
             Locacao rentalService = new Locacao(hour, day, new TaxaServicoBR());
             rentalService.ProcessInvoice(aluguel);
+
+            //Output de dados
             Console.WriteLine("FATURA: ");
             Console.WriteLine(aluguel.Fatura);
 

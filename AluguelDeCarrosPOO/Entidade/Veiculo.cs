@@ -8,6 +8,7 @@ namespace AluguelDeCarrosPOO
 {
     class Veiculo
     {
+        //construtor da classe
         public string Modelo { get; set; }
         public Veiculo(string modelo)
         {

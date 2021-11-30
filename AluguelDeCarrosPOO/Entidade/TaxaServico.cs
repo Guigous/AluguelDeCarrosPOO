@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AluguelDeCarrosPOO
 {
+    //Interface
     interface ITaxaServico
     {
         double Tax(double amount);
@@ -13,7 +14,7 @@ namespace AluguelDeCarrosPOO
 
 
 
-
+    //classe de taxas usando a interface
     class TaxaServicoBR : ITaxaServico
     {
         public double Tax(double amount)
